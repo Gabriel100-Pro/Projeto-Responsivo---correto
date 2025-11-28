@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D70;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-left {
+    display: inline-block;
+    width: 60%;
+    margin-top: 10%;
+    padding-left: 136px;
+
+}
+
+.container-right {
+    display: inline-block;
+    background-color: rgba(93, 93, 125, 0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #5D5D70;
+    line-height: 41px;
+    font-size: 28px;
+    margin-right: 41px;
+}
+
+a:nth-child(2) {
+    opacity: 0.4;
+}
+
+a:hover {
+    opacity: 0.4;
+}
+
+a:active {
+    opacity: 0.8;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    right: 150px;
+    top: 15%;
+
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 88px;
+    width: 468px;
+}
+
+p {
+    font-size: 28px;
+    line-height: 48px;
+    width: 640px;
+}
+
+.btn {
+    padding: 15px 50px;
+    background-color: rgb(171, 88, 234);
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(171, 88, 234, 0.662);
+    transform: scale(1.1);
+    transition: 1s;
+    padding: 15px 55px;
+    color: rgb(0, 0, 0);
+}
+
+button:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+    background-color: rgba(171, 88, 234, 0.49)
+}
+
+@media screen and (max-width: 1000px) {
+    .container-left {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-right {
+        display: block;
+        background-color: rgba(93, 93, 125, 0.16);
+        width: 100%;
+        height: 50vh;
+        height: auto;
+        /*Vai se adaptar com o tamanho que tem disponivel. (100vh);*/
+
+
+    }
+
+    img {
+        padding: 40px;
+        position: static;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+        margin: 58px 50px 0 50px;
+        text-align: center;
+    }
+
+    p {
+        margin: 15px 40px;
+        font-size: 14px;
+        line-height: 25px;
+        width: auto;
+        text-align: center;
+
+    }
+
+    header {
+        display: none;
+    }
+
+    button {
+        margin: 0 auto;
+        /* Centraliza o botão. Só funciounou por causa do display block */
+        display: block;
+
+    }
+
+    button:hover {
+        background-color: rgba(171, 88, 234, 0.662);
+        transform: scale(1.1);
+        transition: 1s;
+        padding: 10px 50px;
+        color: rgb(0, 0, 0);
+    }
+
+    button:active {
+        transform: scale(0.9);
+        transition: 0.1s;
+        background-color: rgba(171, 88, 234, 0.49)
+    }
+
+    @media screen and (max-width: 667px) {
+        .container-left {
+            height: 56%;
+        }
+    }
+
+    @media screen and (max-width: 896px) {
+        .container-left {
+            height: 42%;
+            
+        }
+
+        img{
+            padding: 80px;
+        }
+        
+
+    }
+
+}
